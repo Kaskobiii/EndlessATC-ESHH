@@ -66,18 +66,14 @@ climbaltitude = 5000
 sids =
 
 entrypoints =
-	270, HAKAR
 	260, PETAK
 	240, REMOX
 	235, DISLA
-	200, PADDI
-	190, SKI
 	180, PELLE
 	090, ESTER
-	045, HARBO
 	030, HOFFA
 	350, CRONA
-	340, STA
+	100, ESTER
 
 airlines =
 	SAS, 5, A319/A320/A20N/A321/A333/A359/B737/B738/CRJ9, Scandinavian,swe
