@@ -73,18 +73,14 @@ sids =
 	STEGE1B, STEGE, Stege one bravo
 
 entrypoints =
-	270, HAKAR
 	260, PETAK
 	240, REMOX
 	235, DISLA
-	200, PADDI
-	190, SKI
 	180, PELLE
 	090, ESTER
-	045, HARBO
 	030, HOFFA
 	350, CRONA
-	340, STA
+	100, ESTER
 
 ##############################################################
 ####Airlines####
