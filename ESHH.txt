@@ -64,6 +64,13 @@ runways =
 climbaltitude = 5000
 
 sids =
+	ESTER1B, ESTER, Ester one bravo
+	KNUTA1B, PELLE, Knuta one bravo
+	PADDI1B, PADDI, Paddi one bravo
+	HAKAR1B, HAKAR, Hakar one bravo
+	STA1B, STA, Staby one bravo
+	HARBO1B, HARBO, Harbo one bravo
+	STEGE1B, STEGE, Stege one bravo
 
 entrypoints =
 	270, HAKAR
@@ -78,6 +85,10 @@ entrypoints =
 	030, HOFFA
 	350, CRONA
 	340, STA
+
+##############################################################
+####Airlines####
+##############################################################
 
 airlines =
 	SAS, 5, A319/A320/A20N/A321/A333/A359/B737/B738/CRJ9, Scandinavian,swe
@@ -109,7 +120,12 @@ airlines =
 	ICE, 1, B752, Iceair, w
 	CCA, 1, A333, Air China, e
 	LUX, 1, DH8D, Luxair, s
+	
+##############################################################
+####Areas####
+##############################################################
 
+##ESHH CTR###
 [area1]
 
 shape = polygon
@@ -126,6 +142,7 @@ points =
 	N057.57.02.0, E015.38.18.0
 
 
+##Western MVA 5000ft##
 [area2]
 
 shape = polygon
@@ -138,7 +155,8 @@ points =
 	N057.23.45.00, E014.28.26.00
 	N057.34.19.00, E014.09.24.00
 	N057.53.52.00, E014.25.43.00
-	
+
+##Southern MVA 3000ft##
 [area3]
 
 shape = polygon
@@ -152,6 +170,7 @@ points =
 	N057.14.22.00, E015.50.18.0
 	N057.14.26.00, E015.29.26.00
 
+##Sector Virum FL90##
 [area4]
 
 shape = polygon
@@ -164,7 +183,8 @@ points =
 	N057.48.44.0, E016.36.19.0
 	N057.44.26.0, E017.15.55.0
 	N057.13.43.00, E016.45.14.00
-	
+
+##Eastern MVA 5000ft##	
 [area5]
 
 shape = polygon
@@ -176,7 +196,8 @@ points =
 	N057.57.38.00, E017.29.27.00
 	N057.44.26.0, E017.15.55.0
 	N057.48.44.0, E016.36.19.0
-	
+
+##Middle MVA 2500ft##	
 [area6]
 
 shape = polygon
@@ -190,7 +211,8 @@ points =
 	N058.29.20.00, E015.23.10.00
 	N058.28.08.00, E016.26.29.00
 	N058.01.37.00, E016.43.02.00
-	
+
+##Northern MVA 5000ft##	
 [area7]
 
 shape = polygon
@@ -211,33 +233,38 @@ config2 =
 
 
 
+####RWY 09 SID####
+
+
 [departure1]
 
 runway = rwy1
+##ESTER1B##
 route1 =
-	BAB4C, babap four charlie
-	N59.675500, E17.924667
-	N59.737167, E17.944833
-	N59.755167, E18.145833
-	N59.753167, E18.432333
-	N59.424667, E18.705833
-#SA421, SA401, SA402, SA422, BABAP
+	ESTER1B, Ester one bravo
+	N57.9123, E16.0180,
+	N057.52.35.00, E016.38.27.00
+	N057.49.23.00, E017.21.01.00
+#TOR, ESTER
 
+##SKI3B##
+route2 =
+	SKI3B, Skiro three bravo
+	N57.9123, E16.0180,
+	N57.8933, E16.0214
+	N057.15.02.00, E015.25.32.00
+
+####RWY09 STARS####
 [approach1]
 
 runway = rwy1
-beacon = ESTER
+beacon = VET
 route1 =
-	248
-	N59.663500, E19.074333
-	N59.609167, E18.718000
-	N59.570167, E18.466667
-	N59.511500, E18.134000
-	N59.457500, E17.979667, 0, 200
-	N59.470167, E17.850833, 0, 180
-	N59.501833, E17.860333
-	8, 2500, 180
-#XILAN, SA619, SA618, SA604, SA605(200-), SA802(180-), SA801
+	091, veta1e, veta one echo
+	N057.35.14.00, E014.38.37.00
+	N057.41.37.0, E015.21.46.0
+	10, 2500
+##VET, BELLO#
 
 [planetypes]
 
