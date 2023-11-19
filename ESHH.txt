@@ -1,0 +1,245 @@
+[airspace]
+zoom = 3.0
+elevation = 500
+floor = 1500
+descendaltitude = 11000
+ceiling = 25000
+above = 19000
+transitionaltitude = 6000
+speedrestriction = 25, 250
+localizerspeed = 7, 160
+usa = false
+metric = false
+separation = 3
+center = N057.54.47.0, E015.56.05.00
+
+magneticvar = 0
+
+beacons =
+	HRN, N057.54.47.0, E015.56.05.00, 0, Horn
+	HOFFA, N058.34.45.00, E016.08.21, 0, Hoffa
+	HARBO, N058.31.38.00, E016.16.55, 0, Harbo
+	STEGE, N058.28.07.00, E016.26.30, 0, Stege
+	TOR, N057.52.35.00, E016.38.27.00, 0, Torro
+	ESTER, N057.49.23.00, E017.21.01.00, 0, Ester
+	PELLE, N057.14.16.00, E015.56.36.00, 0, Pelle
+	SKI, N057.15.02.00, E015.25.32.00, 0, Skiro
+	PADDI, N057.18.36.00, E015.02.38.00, 0, Paddi
+	DISLA, N057.25.16.00, E014.25.47.00, 0, Disla
+	REMOX, N057.26.52.00, E014.22.39.00, 0, Remox
+	PETAK, N057.36.21.00, E014.11.06.00, 0, Petak
+	VET, N057.35.14.00, E014.38.37.00, 0, Veta
+	HAKAR, N057.49.49.00, E014.22.18.00, 0, Hakar
+	ASK, N057.48.32.00, E014.58.18.00, 0, Asker
+	BELLO, N057.41.37.0, E015.21.46.0, 0, Bello
+	STA, N058.30.19.00, E015.27.07.00, 0, Staby
+	CRONA, N058.33.40.00, E015.40.35.00, 0, Crona
+	MARCO, 058.36.40.00, E015.52.49.00, 0, Marco
+	ROX, N058.28.45.00, E015.56.18.00, 0, Roxen
+	TOMPA, N058.04.18, E015.56.18.00, 0, Tompa
+	ANDIE, N057.43.11.00, E015.56.18.00, 0, Andie
+	OW, N57.8723, E015.47.50, 0, Oscar Whiskey
+	OE, N57.8723, E016.07.50.00, 0, Oscar Echo
+
+boundary =
+	N058.38.11.00, E015.58.54.00
+	N058.28.08.00, E016.26.29.00
+	N058.01.37.00, E016.43.02.00
+	N057.57.38.00, E017.29.27.00
+	N057.13.43.00, E016.45.14.00
+	N057.14.26.00, E015.29.26.00
+	N057.23.45.00, E014.28.26.00
+	N057.34.19.00, E014.09.24.00
+	N057.53.52.00, E014.25.43.00
+	N057.54.19.00, E014.59.44.00
+	N058.29.20.00, E015.23.10.00
+
+[airport1]
+name = Horn-Airport
+code = ESHH
+runways =
+	rwy1, 09, N057.54.47.0, E015.55.68.75, 090, 9186, 0, 0, 500
+	rwy2, 27, N057.54.47.0, E015.59.14.75, 270, 9186, 0, 0, 500
+
+climbaltitude = 5000
+
+sids =
+
+entrypoints =
+	270, HAKAR
+	260, PETAK
+	240, REMOX
+	235, DISLA
+	200, PADDI
+	190, SKI
+	180, PELLE
+	090, ESTER
+	045, HARBO
+	030, HOFFA
+	350, CRONA
+	340, STA
+
+airlines =
+	SAS, 5, A319/A320/A20N/A321/A333/A359/B737/B738/CRJ9, Scandinavian,swe
+	SAS, 5, A320/A20N/B737/B738/CRJ9/AT72, Scandinavian
+	SAS, 5, A20N, Scandinavian,sw
+	DLH, 2, A319/A320/A321/A20N, Lufthansa, s
+	THY, 1, A21N, Turkish, e
+	PGT, 1, A20N/B738, Sunturk, e
+	FIN, 2, AT75, Finnair, e
+	KLM, 2, E175/E190/E295/B737/B738/B739, KLM, w
+	AFR, 2, A319, Airfrans, w
+	BTI, 2, BCS3, Air Baltic, e
+	QTR, 1, A359/B788, Qatari, e
+	BAW, 2, A21N/B788, Speedbird, w
+	LOT, 2, E170/E75S, LOT, s
+	AUA, 2, A319/A320/E195, Austrian, s
+	ETH, 1, B788, Ethiopian, sw
+	VLG, 1, A20N, Vueling, s
+	EWG, 2, A319/A320, Eurowings, w
+	UAE, 1, B77W, Emirates, e
+	BRU, 1, E75S/E75L/E195, Belavia, e
+	TAP, 2, A20N/A320, Air Portugal, w
+	IBE, 2, A20N/A332, Iberia, w
+	AFL, 2, SU95/A320, Aeroflot, e
+	SWR, 2, BCS1, Swiss, s
+	ASL, 1, A319, Air Serbia, s
+	CSA, 1, A320, CSA, e
+	AEE, 1, A320, Aegean, s
+	ICE, 1, B752, Iceair, w
+	CCA, 1, A333, Air China, e
+	LUX, 1, DH8D, Luxair, s
+
+[area1]
+
+shape = polygon
+altitude = 0
+name = 
+labelpos = N057.57.52.0, E015.56.16.0
+
+points = 
+	N058.00.17.0, E015.56.02.0
+	N057.57.02.0, E016.12.16.0
+	N057.52.08.0, E016.12.16.0
+	N057.49.14.0, E015.56.02.0
+	N057.52.08.0, E015.38.18.0
+	N057.57.02.0, E015.38.18.0
+
+
+[area2]
+
+shape = polygon
+altitude = 5000
+name = 
+labelpos = N057.43.12.00, E014.38.48.00
+points =
+	N57.054.17.00, E014.59.39.0
+	N057.20.24.00, E014.51.23.00
+	N057.23.45.00, E014.28.26.00
+	N057.34.19.00, E014.09.24.00
+	N057.53.52.00, E014.25.43.00
+	
+[area3]
+
+shape = polygon
+altitude = 3000
+name = 
+labelpos = N057.29.11.0, E015.19.38.0
+points = 
+	N057.20.24.00, E014.51.23.00
+	N057.48.32.00, E014.58.18.00
+	N057.32.57.0, E015.50.18.0
+	N057.14.22.00, E015.50.18.0
+	N057.14.26.00, E015.29.26.00
+
+[area4]
+
+shape = polygon
+altitude = 9000
+name = Virum
+labelpos = N057.31.29.00, E016.27.02.00
+points = 
+	N057.14.22.00, E015.50.18.0
+	N057.32.57.0, E015.50.18.0
+	N057.48.44.0, E016.36.19.0
+	N057.44.26.0, E017.15.55.0
+	N057.13.43.00, E016.45.14.00
+	
+[area5]
+
+shape = polygon
+altitude = 5000
+name = 
+labelpos = N057.54.14.0, E017.02.00.0
+points = 
+	N058.01.37.00, E016.43.02.00
+	N057.57.38.00, E017.29.27.00
+	N057.44.26.0, E017.15.55.0
+	N057.48.44.0, E016.36.19.0
+	
+[area6]
+
+shape = polygon
+altitude = 2500
+name = 
+labelpos = N058.22.25.0, E015.56.40.0
+points = 
+	N057.48.44.0, E016.36.19.0
+	N058.12.52.0, E016.26.32.0
+	N058.16.59.0, E015.14.47.0
+	N058.29.20.00, E015.23.10.00
+	N058.28.08.00, E016.26.29.00
+	N058.01.37.00, E016.43.02.00
+	
+[area7]
+
+shape = polygon
+altitude = 5000
+name = 
+labelpos = N058.33.39.0, E015.56.58.0
+points = 
+	N058.29.20.00, E015.23.10.00
+	N058.38.11.00, E015.58.54.00
+	N058.28.08.00, E016.26.29.00
+
+[configurations]
+
+config1 =
+	  0,rwy1,startland
+config2 = 
+	  0,rwy2,startland
+
+
+
+[departure1]
+
+runway = rwy1
+route1 =
+	BAB4C, babap four charlie
+	N59.675500, E17.924667
+	N59.737167, E17.944833
+	N59.755167, E18.145833
+	N59.753167, E18.432333
+	N59.424667, E18.705833
+#SA421, SA401, SA402, SA422, BABAP
+
+[approach1]
+
+runway = rwy1
+beacon = ESTER
+route1 =
+	248
+	N59.663500, E19.074333
+	N59.609167, E18.718000
+	N59.570167, E18.466667
+	N59.511500, E18.134000
+	N59.457500, E17.979667, 0, 200
+	N59.470167, E17.850833, 0, 180
+	N59.501833, E17.860333
+	8, 2500, 180
+#XILAN, SA619, SA618, SA604, SA605(200-), SA802(180-), SA801
+
+[planetypes]
+
+types =
+	E295, 4, 140, 320, 2.9, 3.2, 1200, 1800, 115, 130, 1.3, 1.5, embraer
