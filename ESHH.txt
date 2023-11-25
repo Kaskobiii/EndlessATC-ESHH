@@ -3,14 +3,15 @@ zoom = 3.0
 elevation = 500
 floor = 1500
 descendaltitude = 11000
-ceiling = 25000
-above = 19000
+ceiling = 20000
+above = 25000
 transitionaltitude = 6000
-speedrestriction = 25, 250
-localizerspeed = 7, 160
+speedrestriction = 25, 500, 10000, 250
+localizerspeed = 6, 160
 usa = false
 metric = false
 separation = 3
+name = horn approach, horn approach
 center = N057.54.47.0, E015.56.05.00
 
 magneticvar = 0
@@ -56,6 +57,7 @@ boundary =
 	N057.53.52.00, E014.25.43.00
 	N057.54.19.00, E014.59.44.00
 	N058.29.20.00, E015.23.10.00
+
 
 [airport1]
 name = Horn-Airport
