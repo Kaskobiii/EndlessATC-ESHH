@@ -38,8 +38,9 @@ beacons =
 	ROX, N058.28.45.00, E015.56.18.00, 0, Roxen
 	TOMPA, N058.04.18, E015.56.18.00, 0, Tompa
 	ANDIE, N057.43.11.00, E015.56.18.00, 0, Andie
-	OW, N57.8723, E015.47.50, 0, Oscar Whiskey
-	OE, N57.8723, E016.07.50.00, 0, Oscar Echo
+	##OW, N57.8723, E015.47.50, 0, Oscar Whiskey
+	##OE, N57.8723, E016.07.50.00, 0, Oscar Echo
+##OE,OW i runway konfig istället
 
 boundary =
 	N058.38.11.00, E015.58.54.00
@@ -58,8 +59,8 @@ boundary =
 name = Horn-Airport
 code = ESHH
 runways =
-	rwy1, 09, N057.54.47.0, E015.55.68.75, 090, 9186, 0, 0, 500
-	rwy2, 27, N057.54.47.0, E015.59.14.75, 270, 9186, 0, 0, 500
+	rwy1, 09, N057.54.47.0, E015.55.68.75, 090, 9186, 0, 0, 500,	3,	090.0,	3,	270.0,	OW,	4.0,	ZZ,	4.5,	124.3,	horn tower
+	rwy2, 27, N057.54.47.0, E015.59.14.75, 270, 9186, 0, 0, 500,	3,	270.0,	3,	090.0,	OE,	4.0,	ZZ,	4.5,	124.3,	horn tower
 
 climbaltitude = 5000
 
