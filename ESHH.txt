@@ -4,7 +4,7 @@ elevation = 500
 floor = 1500
 descendaltitude = 16000
 ceiling = 20000
-above = 25000
+above = 20000
 transitionaltitude = 6000
 speedrestriction = 25, 500, 10000, 250
 localizerspeed = 6, 160
@@ -331,8 +331,8 @@ beacon = ESTER, N057.49.23.00, E017.21.01.00, 0, Ester
 route1 =
 		0, ESTER4F, ester four foxtrot
 		N057.49.23.00, E017.21.01.00, 16000
-		N057.52.35.00, E016.38.27.00
-		10, 5000, 210
+		N057.52.35.00, E016.38.27.00, 5000
+		10, 2000, 210
 
 [approach6]
 runway = rwy2
