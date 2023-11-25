@@ -38,6 +38,8 @@ beacons =
 	ROX, N058.28.45.00, E015.56.18.00, 0, Roxen
 	TOMPA, N058.04.18, E015.56.18.00, 0, Tompa
 	ANDIE, N057.43.11.00, E015.56.18.00, 0, Andie
+	IDN, N058.16.25.00, E016.13.17.00, 0, Idun
+	MAL, N058.06.25.00, E015.29.16.00, 0, Malma
 	##OW, N57.8723, E015.47.50, 0, Oscar Whiskey
 	##OE, N57.8723, E016.07.50.00, 0, Oscar Echo
 ##OE,OW i runway konfig istället
