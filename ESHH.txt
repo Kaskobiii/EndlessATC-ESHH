@@ -36,13 +36,13 @@ beacons =
 	CRONA, N058.33.40.00, E015.40.35.00, 0, Crona
 	MARCO, 058.36.40.00, E015.52.49.00, 0, Marco
 	ROX, N058.28.45.00, E015.56.18.00, 0, Roxen
-	TOMPA, N058.04.18, E015.56.18.00, 0, Tompa
-	ANDIE, N057.43.11.00, E015.56.18.00, 0, Andie
+	TOMPA, 0, 10, 270, Tompa
+	ANDIE, 0, -10, 270, Andie
 	IDN, N058.16.25.00, E016.13.17.00, 0, Idun
 	MAL, N058.06.25.00, E015.29.16.00, 0, Malma
-	##OW, N57.8723, E015.47.50, 0, Oscar Whiskey
-	##OE, N57.8723, E016.07.50.00, 0, Oscar Echo
-##OE,OW i runway konfig istället
+##OW, N57.8723, E015.47.50, 0, Oscar Whiskey
+##OE, N57.8723, E016.07.50.00, 0, Oscar Echo
+##OEOW borttagna, flyttade till runway konfig
 
 boundary =
 	N058.38.11.00, E015.58.54.00
@@ -61,19 +61,14 @@ boundary =
 name = Horn-Airport
 code = ESHH
 runways =
-	rwy1, 09, N057.54.47.0, E015.55.68.75, 090, 9186, 0, 0, 500,	3,	090.0,	3,	270.0,	OW,	4.0,	ZZ,	4.5,	124.3,	horn tower
-	rwy2, 27, N057.54.47.0, E015.59.14.75, 270, 9186, 0, 0, 500,	3,	270.0,	3,	090.0,	OE,	4.0,	ZZ,	4.5,	124.3,	horn tower
+	rwy1, 09, -0.6, 0.0, 090, 9186, 0, 0, 500,	3,	090.0,	3,	270.0,	OW,	4.0,	ZZ,	4.5,	124.3,	horn tower
+	rwy2, 27, 0.6, 0.0, 270, 9186, 0, 0, 500,	3,	270.0,	3,	090.0,	OE,	4.0,	ZZ,	4.5,	124.3,	horn tower
+
+##Beacon ZZ används ej
 
 climbaltitude = 5000
 
-sids =
-	ESTER1B, ESTER, Ester one bravo
-	KNUTA1B, PELLE, Knuta one bravo
-	PADDI1B, PADDI, Paddi one bravo
-	HAKAR1B, HAKAR, Hakar one bravo
-	STA1B, STA, Staby one bravo
-	HARBO1B, HARBO, Harbo one bravo
-	STEGE1B, STEGE, Stege one bravo
+##sids =
 
 entrypoints =
 	260, PETAK
@@ -84,10 +79,7 @@ entrypoints =
 	030, HOFFA
 	350, CRONA
 	100, ESTER
-
-##############################################################
-####Airlines####
-##############################################################
+##tog bort de entrypoints som inte är någon arrival. La till altitude
 
 airlines =
 	SAS, 5, A319/A320/A20N/A321/A333/A359/B737/B738/CRJ9, Scandinavian,swe
@@ -119,29 +111,22 @@ airlines =
 	ICE, 1, B752, Iceair, w
 	CCA, 1, A333, Air China, e
 	LUX, 1, DH8D, Luxair, s
-	
-##############################################################
-####Areas####
-##############################################################
 
-##ESHH CTR###
 [area1]
 
 shape = polygon
-altitude = 0
+altitude = 1500
 name = 
-labelpos = N057.57.52.0, E015.56.16.0
-
+labelpos = 0.0, 2.0
 points = 
-	N058.00.17.0, E015.56.02.0
-	N057.57.02.0, E016.12.16.0
-	N057.52.08.0, E016.12.16.0
-	N057.49.14.0, E015.56.02.0
-	N057.52.08.0, E015.38.18.0
-	N057.57.02.0, E015.38.18.0
+	10, 2.5
+	10, -2.5
+	0, -5.5
+	-10, -2.5
+	-10, 2.5
+	0, 5.5
 
 
-##Western MVA 5000ft##
 [area2]
 
 shape = polygon
@@ -154,8 +139,7 @@ points =
 	N057.23.45.00, E014.28.26.00
 	N057.34.19.00, E014.09.24.00
 	N057.53.52.00, E014.25.43.00
-
-##Southern MVA 3000ft##
+	
 [area3]
 
 shape = polygon
@@ -169,7 +153,6 @@ points =
 	N057.14.22.00, E015.50.18.0
 	N057.14.26.00, E015.29.26.00
 
-##Sector Virum FL90##
 [area4]
 
 shape = polygon
@@ -182,8 +165,7 @@ points =
 	N057.48.44.0, E016.36.19.0
 	N057.44.26.0, E017.15.55.0
 	N057.13.43.00, E016.45.14.00
-
-##Eastern MVA 5000ft##	
+	
 [area5]
 
 shape = polygon
@@ -195,8 +177,7 @@ points =
 	N057.57.38.00, E017.29.27.00
 	N057.44.26.0, E017.15.55.0
 	N057.48.44.0, E016.36.19.0
-
-##Middle MVA 2500ft##	
+	
 [area6]
 
 shape = polygon
@@ -210,8 +191,7 @@ points =
 	N058.29.20.00, E015.23.10.00
 	N058.28.08.00, E016.26.29.00
 	N058.01.37.00, E016.43.02.00
-
-##Northern MVA 5000ft##	
+	
 [area7]
 
 shape = polygon
@@ -232,38 +212,89 @@ config2 =
 
 
 
-####RWY 09 SID####
-
-
 [departure1]
 
 runway = rwy1
-##ESTER1B##
-route1 =
+route1 = 
 	ESTER1B, Ester one bravo
-	N57.9123, E16.0180,
-	N057.52.35.00, E016.38.27.00
-	N057.49.23.00, E017.21.01.00
-#TOR, ESTER
-
-##SKI3B##
-route2 =
+	3.0, 0.0
+	22.63, -2.20 
+	45.39, -5.30 
+route2 = 
+	HARBO1B, Harbo one bravo
+	3.0, 0.0
+	9.23, 21.82 
+	11.13, 37.06
+route3 = 
+	STEGE1B, Stege one bravo
+	3.0, 0.0
+	9.23, 21.82 
+	16.19, 33.40
+route4 = 
+	STA1B, Staby one bravo
+	3.0, 0.0
+	-15.47, 35.64
+route5 = 
+	HAKAR1B, Hakar one bravo
+	3.0, 0.0
+	2.0, -2.0
+	-30.81, -6.27 
+	-50.01, -4.92
+route6 = 
+	PADDI1B, Paddi one bravo
+	3.0, 0.0
+	-28.50, -36.20
+route7 = 
 	SKI3B, Skiro three bravo
-	N57.9123, E16.0180,
-	N57.8933, E16.0214
-	N057.15.02.00, E015.25.32.00
+	3.0, 0.0
+	-16.32, -39.84
 
-####RWY09 STARS####
+
+
+runway = rwy2
+route1 = 
+	ESTER1C, Ester one charlie
+	-3.0, 0.0
+	0, 7
+	45.39, -5.30 
+route2 = 
+	HARBO1C, Harbo one charlie
+	-3.0, 0.0
+	9.23, 21.82 
+	11.13, 37.06
+route3 = 
+	STEGE1C, Stege one charlie
+	-3.0, 0.0
+	9.23, 21.82 
+	16.19, 33.40
+route4 = 
+	STA4C, Staby one charlie
+	-3.0, 0.0
+	-14.35, 11.71
+	-15.47, 35.64
+route5 = 
+	HAKAR1C, Hakar one charlie
+	-3.0, 0.0
+	-30.81, -6.27 
+	-50.01, -4.92
+route6 = 
+	PADDI2C, Paddi two charlie
+	-6.0, 0.0
+	-28.50, -36.20
+route7 = 
+	SKI2C, Skiro two charlie
+	-3.0, 0.0
+	-16.32, -39.84
+
+
+	
+
 [approach1]
 
 runway = rwy1
-beacon = VET
+beacon = ESTER
 route1 =
-	091, veta1e, veta one echo
-	N057.35.14.00, E014.38.37.00
-	N057.41.37.0, E015.21.46.0
-	10, 2500
-##VET, BELLO#
+
 
 [planetypes]
 
