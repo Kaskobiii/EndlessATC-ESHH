@@ -2,7 +2,7 @@
 zoom = 3.0
 elevation = 500
 floor = 1500
-descendaltitude = 11000
+descendaltitude = 16000
 ceiling = 20000
 above = 25000
 transitionaltitude = 6000
@@ -11,6 +11,7 @@ localizerspeed = 6, 160
 usa = false
 metric = false
 separation = 3
+automatic = true
 name = horn approach, horn approach
 center = N057.54.47.0, E015.56.05.00
 
@@ -73,14 +74,11 @@ climbaltitude = 5000
 ##sids =
 
 entrypoints =
-	260, PETAK
-	240, REMOX
-	235, DISLA
 	180, PELLE
 	090, ESTER
-	030, HOFFA
-	350, CRONA
-	100, ESTER
+	250, VET
+	360, ROX
+
 ##tog bort de entrypoints som inte är någon arrival. La till altitude
 
 airlines =
@@ -251,7 +249,7 @@ route7 =
 	3.0, 0.0
 	-16.32, -39.84
 
-
+[departure2]
 
 runway = rwy2
 route1 = 
@@ -292,10 +290,82 @@ route7 =
 	
 
 [approach1]
-
 runway = rwy1
-beacon = ESTER
+beacon = ESTER, N057.49.23.00, E017.21.01.00, 0, Ester
 route1 =
+		0, ESTER1E, ester one echo
+		N057.49.23.00, E017.21.01.00, 16000
+		0, 10
+		end, 270
+
+[approach2]
+runway = rwy1
+beacon = PELLE, N057.14.16.00, E015.56.36.00, 0, Pelle
+route1 =
+		0, KNUTA1E, knuta one echo
+		N057.14.16.00, E015.56.36.00, 10000
+		0, -10
+		end, 270
+
+[approach3]
+runway = rwy1
+beacon = VET, N057.35.14.00, E014.38.37.00, 0, Veta
+route1 =
+		0, VETA1E, veta one echo
+		N057.35.14.00, E014.38.37.00, 7000
+		N057.41.37.0, E015.21.46.0
+		end, 350
+
+[approach4]
+runway = rwy1
+beacon = ROX, N058.28.45.00, E015.56.18.00, 0, Roxen
+route1 =
+		0, ROX1E, roxen one echo
+		N058.28.45.00, E015.56.18.00, 10000
+		0, 10
+		end, 270
+
+[approach5]
+runway = rwy2
+beacon = ESTER, N057.49.23.00, E017.21.01.00, 0, Ester
+route1 =
+		0, ESTER4F, ester four foxtrot
+		N057.49.23.00, E017.21.01.00, 16000
+		N057.52.35.00, E016.38.27.00
+		10, 5000, 210
+
+[approach6]
+runway = rwy2
+beacon = PELLE, N057.14.16.00, E015.56.36.00, 0, Pelle
+route1 =
+		0, KNUTA1F, knuta one foxtrot
+		N057.14.16.00, E015.56.36.00, 10000
+		0, -10
+		end, 075
+
+[approach7]
+runway = rwy2
+beacon = VET, N057.35.14.00, E014.38.37.00, 0, Veta
+route1 =
+		0, VETA2F, veta two foxtrot
+		N057.35.14.00, E014.38.37.00, 16000
+		0, -10
+		end, 075
+
+[approach8]
+runway = rwy2
+beacon = ROX, N058.28.45.00, E015.56.18.00, 0, Roxen
+route1 =
+		0, ROX1E, roxen one echo
+		N058.28.45.00, E015.56.18.00, 10000
+		0, 10
+		end, 090
+
+
+
+
+
+
 
 
 [planetypes]
