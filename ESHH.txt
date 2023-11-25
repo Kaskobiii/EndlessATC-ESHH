@@ -3,7 +3,7 @@ zoom = 3.0
 elevation = 500
 floor = 1500
 descendaltitude = 16000
-ceiling = 20000
+ceiling = 18000
 above = 20000
 transitionaltitude = 6000
 speedrestriction = 25, 500, 10000, 250
@@ -69,7 +69,7 @@ runways =
 
 ##Beacon ZZ används ej
 
-climbaltitude = 5000
+climbaltitude = 20000
 
 ##sids =
 
@@ -217,36 +217,36 @@ config2 =
 runway = rwy1
 route1 = 
 	ESTER1B, Ester one bravo
-	3.0, 0.0
+	3.0, 0.0, 5000
 	22.63, -2.20 
-	45.39, -5.30 
+	45.39, -5.30, 15000
 route2 = 
 	HARBO1B, Harbo one bravo
-	3.0, 0.0
+	3.0, 0.0, 5000
 	9.23, 21.82 
-	11.13, 37.06
+	11.13, 37.06, 16000
 route3 = 
 	STEGE1B, Stege one bravo
-	3.0, 0.0
+	3.0, 0.0, 5000
 	9.23, 21.82 
-	16.19, 33.40
+	16.19, 33.40, 16000
 route4 = 
 	STA1B, Staby one bravo
-	3.0, 0.0
+	3.0, 0.0, 5000
 	-15.47, 35.64
 route5 = 
 	HAKAR1B, Hakar one bravo
-	3.0, 0.0
-	2.0, -2.0
+	3.0, 0.0, 5000
+	2.0, -4.0
 	-30.81, -6.27 
 	-50.01, -4.92
 route6 = 
 	PADDI1B, Paddi one bravo
-	3.0, 0.0
+	3.0, 0.0, 5000
 	-28.50, -36.20
 route7 = 
 	SKI3B, Skiro three bravo
-	3.0, 0.0
+	3.0, 0.0, 5000
 	-16.32, -39.84
 
 [departure2]
@@ -254,36 +254,36 @@ route7 =
 runway = rwy2
 route1 = 
 	ESTER1C, Ester one charlie
-	-3.0, 0.0
-	0, 7
-	45.39, -5.30 
+	-3.0, 0.0, 5000
+	0, 8
+	45.39, -5.30, 15000
 route2 = 
 	HARBO1C, Harbo one charlie
-	-3.0, 0.0
+	-3.0, 0.0, 5000
 	9.23, 21.82 
 	11.13, 37.06
 route3 = 
 	STEGE1C, Stege one charlie
-	-3.0, 0.0
+	-3.0, 0.0, 5000
 	9.23, 21.82 
 	16.19, 33.40
 route4 = 
 	STA4C, Staby one charlie
-	-3.0, 0.0
+	-3.0, 0.0, 5000
 	-14.35, 11.71
 	-15.47, 35.64
 route5 = 
 	HAKAR1C, Hakar one charlie
-	-3.0, 0.0
+	-3.0, 0.0, 5000
 	-30.81, -6.27 
 	-50.01, -4.92
 route6 = 
 	PADDI2C, Paddi two charlie
-	-6.0, 0.0
+	-9.0, 0.0, 5000
 	-28.50, -36.20
 route7 = 
 	SKI2C, Skiro two charlie
-	-3.0, 0.0
+	-3.0, 0.0, 5000
 	-16.32, -39.84
 
 
@@ -331,8 +331,8 @@ beacon = ESTER, N057.49.23.00, E017.21.01.00, 0, Ester
 route1 =
 		0, ESTER4F, ester four foxtrot
 		N057.49.23.00, E017.21.01.00, 16000
-		N057.52.35.00, E016.38.27.00, 5000
-		10, 2000, 210
+		N057.52.35.00, E016.38.27.00
+		10
 
 [approach6]
 runway = rwy2
